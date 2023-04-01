@@ -15,6 +15,6 @@ export class ProductDetailsComponent {
     debugger;
     const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute = Number(routeParams.get('productId'));
-    this.product = products.find((x) => (x.id = productIdFromRoute));
+    this.product = products.find((x) => x.id == productIdFromRoute);
   }
 }
